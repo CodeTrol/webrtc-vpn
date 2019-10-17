@@ -20,4 +20,4 @@ Run `sudo nodejs client -r $ROOM_NUMBER -rp $ROOM_PASSPHRASE` on each client (qu
 Run `npm test`
 
 ## Debugging
-Run `npm run debug` and use Chrome DevTools to connect to this node. Follow [the code](./debugging) to see what can be inpected there.
+Run `npm run debug` and use Chrome DevTools to connect to this node. Follow [the code](./debugging) to see what can be inspected there.

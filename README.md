@@ -16,6 +16,11 @@ Run `npm install` to get all dependencies
 ### Run using [https://appr.tc](https://appr.tc) as a server
 Run `sudo nodejs client -r $ROOM_NUMBER -rp $ROOM_PASSPHRASE` on each client (quite unstable solution with it's limitations by design)
 
+### Run without sudo
+1. Make a copy of nodejs executable.
+2. Run `sudo setcap CAP_NET_ADMIN=ep /path/to/new/nodejs/executable`
+3. Run client using the new executable (no sudo required)
+
 ## Testing
 Run `npm test`
 

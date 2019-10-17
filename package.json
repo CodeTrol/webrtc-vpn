@@ -1,0 +1,28 @@
+{
+  "name": "webrtc-vpn",
+  "version": "0.0.1",
+  "description": "A basic WebRTC-based VPN client",
+  "main": "server.js",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "wrtc": "^0.4.1",
+    "ws": "^7.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1"
+  },
+  "scripts": {
+    "test": "mocha tests --timeout 30000",
+    "install": "node-gyp rebuild",
+    "debug": "nodejs --inspect debug.js"
+  },
+  "os": [
+    "!win32"
+  ],
+  "author": {
+    "name": "Victor Palyvoda"
+  },
+  "license": "GPLv3"
+}
